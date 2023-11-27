@@ -6,10 +6,14 @@ const list_container = document.getElementById('shipping-list');
 let i = 0; 
 // REALIZZAZIONE DEL CICLO WHILE
 while(i < list.length) {
+    //  BONUS  
+    if(i == 4) {
+        console.log(list[i]);
+        list[i] = list[i] + ' Integrale';
+    }
     const li = document.createElement('li');
     li.innerText = list[i];
     list_container.appendChild(li);
     i++;
-    
-    console.log(li);
-}
+} 
+
