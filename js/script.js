@@ -10,4 +10,6 @@ while(i < list.length) {
     li.innerText = list[i];
     list_container.appendChild(li);
     i++;
+    
+    console.log(li);
 }
